@@ -33,7 +33,7 @@ jobs:
       matrix:
         runner:
           - ubuntu-latest
-          - warp-ubuntu-latest-x64-4x
+          - warp-ubuntu-latest-x64-16x
           - buildjet-16vcpu-ubuntu-2204
           - runs-on,runner=16cpu-x64,image=custom,env=dev
     runs-on: ${{ matrix.runner }}
