@@ -32,8 +32,8 @@ jobs:
       fail-fast: false
       matrix:
         runner:
-          - runs-on,runner=8cpu-linux,env=dev,ami=ami-04ee15bf75d4421c3,family=c7a
-          - runs-on,runner=8cpu-linux,env=dev,ami=ami-04ee15bf75d4421c3,family=t3a
+          - runs-on,runner=8cpu-linux,env=dev,ami=ami-03220fc853caa2a01,family=c7a,spot=false
+          - runs-on,runner=8cpu-linux,env=dev,ami=ami-03220fc853caa2a01,family=t3a,spot=false
     runs-on: ${{ matrix.runner }}
     timeout-minutes: 300
     steps:
