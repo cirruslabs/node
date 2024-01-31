@@ -35,6 +35,7 @@ jobs:
           - runs-on,runner=16cpu-linux
           - buildjet-16vcpu-ubuntu-2204
           - warp-ubuntu-latest-x64-16x
+          - ubicloud-standard-16
           - ubuntu-latest
     runs-on: ${{ matrix.runner }}
     timeout-minutes: 300
