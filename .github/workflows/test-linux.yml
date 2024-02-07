@@ -32,12 +32,8 @@ jobs:
       fail-fast: false
       matrix:
         runner:
-          - runs-on,runner=16cpu-linux
-          - buildjet-16vcpu-ubuntu-2204
-          - warp-ubuntu-latest-x64-16x
-          - ubicloud-standard-16
+          - ghcr.io/cirruslabs/ubuntu-runner-amd64:22.04
           - ubuntu-latest
-          - github-16cpu
     runs-on: ${{ matrix.runner }}
     timeout-minutes: 300
     steps:
