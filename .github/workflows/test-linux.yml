@@ -33,7 +33,6 @@ jobs:
       matrix:
         runner:
           - ghcr.io/cirruslabs/ubuntu-runner-amd64:22.04
-          - ubuntu-latest
     runs-on: ${{ matrix.runner }}
     timeout-minutes: 300
     steps:
